@@ -18,9 +18,9 @@ public class RestOffres {
         return offreRepository.findAll();
     }
 
-    @GetMapping("/{uid}")
-    public Offre getbyid(@PathVariable Long uid) {
-        return offreRepository.findById(uid).get();
+    @GetMapping("/{id}")
+    public Offre getbyid(@PathVariable Long id) {
+        return offreRepository.findById(id).get();
     }
 
     @PostMapping
